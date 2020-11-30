@@ -1,0 +1,31 @@
+body {
+  /* margin-left: 10px; */
+  color: white;
+  padding-left: 10px;
+  background-color: #74b9ff;
+  font-weight: 800;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  outline: none;
+}
+#mainm {
+  margin-top: 20%;
+  margin-left: 20px;
+  /* text-shadow: 2px 2px 10px black; */
+}
+.ui {
+  width: 500px;
+  border-radius: 20px;
+}
+input {
+  border-radius: 30px;
+}
+#exampleInputPassword1 {
+  border-radius: 10px;
+}
+#exampleInputEmail1 {
+  border-radius: 10px;
+}
+#buntton {
+  color: #2d3436;
+}

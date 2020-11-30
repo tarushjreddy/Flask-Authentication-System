@@ -1,0 +1,64 @@
+{%extends 'index.html'%} {% block head %}
+<title>Login</title>
+<link rel="stylesheet" href="vb.css" />
+{% endblock %} {% block body %}
+
+<style>
+  body {
+    /* margin-left: 10px; */
+    color: white;
+    padding-left: 10px;
+    background-color: #ff7675;
+    font-weight: 800;
+    font-family: "Poppins", sans-serif;
+    border: none;
+    outline: none;
+  }
+  #mainm {
+    margin-top: 20%;
+    margin-left: 20px; /* text-shadow: 2px 2px 10px black; */
+  }
+  .ui {
+    width: 500px;
+    border-radius: 20px;
+  }
+  input {
+    border-radius: 30px;
+  }
+  #exampleInputPassword1 {
+    border-radius: 10px;
+  }
+  #exampleInputEmail1 {
+    border-radius: 10px;
+  }
+  #buntton {
+    color: #2d3436;
+  }
+</style>
+<div id="mainm">
+  <h1>Login..</h1>
+  <form class="ui" actions="/login" method="POST">
+    <div class="form-group">
+      <label for="exampleInputEmail1">Email address</label>
+      <input
+        type="email"
+        class="form-control"
+        id="exampleInputEmail1"
+        name="email"
+        aria-describedby="emailHelp"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="exampleInputPassword1">Password</label>
+      <input
+        type="password"
+        class="form-control"
+        name="password"
+        id="exampleInputPassword1"
+      />
+    </div>
+    <button type="submit" class="btn btn-warning" id="buntton">Submit</button>
+  </form>
+</div>
+{%endblock %}

@@ -1,0 +1,47 @@
+{%extends 'index.html'%} {% block head %}
+<title>Sign up!!</title>
+<link rel="stylesheet" href="../static/op.css" />
+{% endblock %} {% block body %}
+<style>
+    #exampleInputEmail1{
+        margin-bottom: 30px;
+    }
+</style>
+<div id="mainm">
+  <h1>Sign up!!!</h1>
+  <form class="ui" actions="/login" method='POST'>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Name</label>
+      <input
+        type="text"
+        class="form-control"
+        id="exampleInputEmail1"
+        class="jj"
+        name="name"
+        aria-describedby="emailHelp"
+        
+      />
+<div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" 
+    name="email"
+    aria-describedby="emailHelp" />
+</div>
+       
+    <div class="form-group">
+      <label for="exampleInputPassword1">Password</label>
+      <input type="password" class="form-control" 
+      name="password"
+      id="exampleInputPassword1" />
+    </div>
+
+</div>
+
+</div>
+
+    <button type="submit" class="btn btn-warning" id="buntton">Submit</button>
+</div>
+
+  </form>
+
+{%endblock %}
